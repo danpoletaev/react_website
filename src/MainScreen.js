@@ -3,6 +3,7 @@ import {Container, Col, Row, Navbar, Nav, Image} from "react-bootstrap";
 import CustomNavbar from "./components/CustomNavbar";
 import {makeStyles, withStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import CompanyHorizontalScroll from "./components/CompanyScroll";
 
 //images and resources
 import Background_sh1 from './images/Site_back.jpg'
@@ -66,6 +67,7 @@ const LandingPage = () => {
                         </Col>
                     </Row>
                 </Container>
+                <CompanyHorizontalScroll/>
             </Container>
         </>
     )
