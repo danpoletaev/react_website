@@ -5,6 +5,10 @@ import {makeStyles, withStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import CompanyHorizontalScroll from "./components/CompanyScroll";
 
+//screen parts
+import WorkForceManagment from "./components/WorkForceManagment";
+import Stages from "./components/Stages";
+
 //images and resources
 import Background_sh1 from './images/Site_back.jpg'
 import Main_img from './images/m_r.png'
@@ -16,7 +20,11 @@ const useStyles = makeStyles({
         height: '100vh',
         backgroundImage: `url(${Background_sh1})`,
         backgroundSize: '100%',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        marginRight : '0 !important',
+        marginLeft : '0 !important',
+        paddingRight : '0 !important',
+        paddingLeft : '0 !important',
     },
     firstScreenShape: {
         color: '#ffffff',
@@ -38,7 +46,10 @@ const MainButton = withStyles((theme) => ({
         },
         borderRadius: '40px',
         padding: '20px',
-        width: '240px'
+        width: '240px',
+        '&:focus': {
+            outline: 'none'
+}
     },
 }))(Button);
 
@@ -68,7 +79,11 @@ const LandingPage = () => {
                     </Row>
                 </Container>
                 <CompanyHorizontalScroll/>
+                <WorkForceManagment/>
+                <Stages/>
             </Container>
+
+
         </>
     )
 }

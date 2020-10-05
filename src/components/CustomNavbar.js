@@ -14,6 +14,9 @@ const LoginButton = withStyles((theme) => ({
         '&:hover': {
             backgroundColor: '#126753',
         },
+        '&:focus': {
+            outline: 'none'
+        },
         borderRadius: '40px',
         padding: '15px',
         width: '120px'
