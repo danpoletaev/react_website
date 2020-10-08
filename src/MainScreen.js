@@ -8,6 +8,7 @@ import CompanyHorizontalScroll from "./components/CompanyScroll";
 //screen parts
 import WorkForceManagment from "./components/WorkForceManagment";
 import Stages from "./components/Stages";
+import Services from "./components/Services";
 
 //images and resources
 import Background_sh1 from './images/Site_back.jpg'
@@ -81,6 +82,7 @@ const LandingPage = () => {
                 <CompanyHorizontalScroll/>
                 <WorkForceManagment/>
                 <Stages/>
+                <Services/>
             </Container>
 
 
