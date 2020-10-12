@@ -1,0 +1,19 @@
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    &:before {
+      font-size: 20px;
+      content: "\2022";
+      color: #0066cc;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: 0px;
+      line-height: 1.5em;
+    }
+  }
+}
